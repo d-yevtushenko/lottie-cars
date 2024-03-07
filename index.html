@@ -23,6 +23,10 @@
             text-align: center;
             border: 1px solid #ddd;
         }
+        .column div {
+            display: block;
+            width: 100%;
+        }
 
         /* Додатковий стиль для поліпшення вигляду на малих екранах */
         @media (max-width: 600px) {
@@ -38,34 +42,34 @@
     <div class="row">
         <div class="column">
             <h2>Колонка 1</h2>
-            <div id="animationContainer1" style="width: 100%;"></div>
+            <div id="animationContainer1"></div>
         </div>
         <div class="column">
             <h2>Колонка 2</h2>
-            <div id="animationContainer2" style="width: 100%;"></div>
+            <div id="animationContainer2"></div>
         </div>
         <div class="column">
             <h2>Колонка 3</h2>
-            <div id="animationContainer3" style="width: 100%;"></div>
+            <div id="animationContainer3"></div>
         </div>
         <div class="column">
             <h2>Колонка 4</h2>
-            <div id="animationContainer4" style="width: 100%;"></div>
+            <div id="animationContainer4"></div>
         </div>
     </div>
 
     <div class="row">
         <div class="column">
             <h2>Колонка 5</h2>
-            <div id="animationContainer5" style="width: 100%;"></div>
+            <div id="animationContainer5"></div>
         </div>
         <div class="column">
             <h2>Колонка 6</h2>
-            <div id="animationContainer6" style="width: 100%;"></div>
+            <div id="animationContainer6"></div>
         </div>
         <div class="column">
             <h2>Колонка 7</h2>
-            <div id="animationContainer7" style="width: 100%; "></div>
+            <div id="animationContainer7"></div>
         </div>
         <div class="column">
             <h2>Колонка 8</h2>
@@ -79,7 +83,7 @@
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'data_01_01.json', // замініть на шлях до вашого файлу Lottie JSON
+    path: 'data_02_01.json', // замініть на шлях до вашого файлу Lottie JSON
   });
   
   // Ініціалізація другої анімації
@@ -96,14 +100,14 @@
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'data_03_01.json', // замініть на шлях до вашого файлу Lottie JSON
+    path: 'data_02_01.json', // замініть на шлях до вашого файлу Lottie JSON
   });
   var animation1 = lottie.loadAnimation({
     container: document.getElementById('animationContainer1'),
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'data_04_01.json', // замініть на шлях до вашого файлу Lottie JSON
+    path: 'data_02_01.json', // замініть на шлях до вашого файлу Lottie JSON
   });
   
   // Ініціалізація другої анімації
