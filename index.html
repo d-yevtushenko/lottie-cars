@@ -1,37 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin: 10px;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чотири колонки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .column {
-      box-sizing: border-box;
-      flex: 1;
-      min-width: 100px;
-      margin: 5px;
-      padding: 15px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      background-color: #f9f9f9;
-    }
-  </style>
-  <title>Шесть колонок</title>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        /* Додатковий стиль для поліпшення вигляду на малих екранах */
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+            }
+        }
+    </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
 </head>
 <body>
 
-  <div class="column">Колонка 1</div>
-  <div class="column">Колонка 2</div>
-  <div class="column">Колонка 3</div>
-  <div class="column">Колонка 4</div>
-  <div class="column">Колонка 5</div>
-  <div class="column">Колонка 6</div>
+    <div class="row">
+        <div class="column">
+            <h2>Колонка 1</h2>
+            <div id="animationContainer1" style="width: 200px; height: 200px;"></div>
+        </div>
+        <div class="column">
+            <h2>Колонка 2</h2>
+            <div id="animationContainer2" style="width: 200px; height: 200px;"></div>
+        </div>
+        <div class="column">
+            <h2>Колонка 3</h2>
+            <div id="animationContainer3" style="width: 200px; height: 200px;"></div>
+        </div>
+        <div class="column">
+            <h2>Колонка 4</h2>
+            <div id="animationContainer4" style="width: 200px; height: 200px;"></div>
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="column">
+            <h2>Колонка 5</h2>
+            <div id="animationContainer5" style="width: 200px; height: 200px;"></div>
+        </div>
+        <div class="column">
+            <h2>Колонка 6</h2>
+            <div id="animationContainer6" style="width: 200px; height: 200px;"></div>
+        </div>
+        <div class="column">
+            <h2>Колонка 7</h2>
+            <div id="animationContainer7" style="width: 200px; height: 200px;"></div>
+        </div>
+        <div class="column">
+            <h2>Колонка 8</h2>
+            <p>Зміст колонки 8</p>
+        </div>
+    </div>
+<script>
+  // Ініціалізація першої анімації
+  var animation1 = lottie.loadAnimation({
+    container: document.getElementById('animationContainer1'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'data_01_01.json', // замініть на шлях до вашого файлу Lottie JSON
+  });
+  
+  // Ініціалізація другої анімації
+  var animation2 = lottie.loadAnimation({
+    container: document.getElementById('animationContainer2'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'data_02_01.json', // замініть на шлях до вашого файлу Lottie JSON
+  });
+
+    var animation2 = lottie.loadAnimation({
+    container: document.getElementById('animationContainer2'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'data_03_01.json', // замініть на шлях до вашого файлу Lottie JSON
+  });
+  var animation1 = lottie.loadAnimation({
+    container: document.getElementById('animationContainer1'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'data_04_01.json', // замініть на шлях до вашого файлу Lottie JSON
+  });
+  
+  // Ініціалізація другої анімації
+  var animation2 = lottie.loadAnimation({
+    container: document.getElementById('animationContainer2'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'data_05_01.json', // замініть на шлях до вашого файлу Lottie JSON
+  });
+
+    var animation2 = lottie.loadAnimation({
+    container: document.getElementById('animationContainer2'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'data_06_01.json', // замініть на шлях до вашого файлу Lottie JSON
+  });
+      var animation2 = lottie.loadAnimation({
+    container: document.getElementById('animationContainer2'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'data_07_01.json', // замініть на шлях до вашого файлу Lottie JSON
+  });
+  // Додайте інші ініціалізації для інших анімацій, якщо потрібно
+</script>
 </body>
 </html>
