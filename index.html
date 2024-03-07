@@ -15,6 +15,7 @@
         .row {
             display: flex;
             flex-wrap: wrap;
+            flex-direction: row;
         }
 
         .column {
@@ -24,7 +25,7 @@
             border: 1px solid #ddd;
         }
         .column div {
-            display: block;
+            display: flex;
             width: 100%;
         }
 
@@ -95,14 +96,14 @@
     path: 'data_02_01.json', // замініть на шлях до вашого файлу Lottie JSON
   });
 
-    var animation2 = lottie.loadAnimation({
+    var animation3 = lottie.loadAnimation({
     container: document.getElementById('animationContainer2'),
     renderer: 'svg',
     loop: true,
     autoplay: true,
     path: 'data_02_01.json', // замініть на шлях до вашого файлу Lottie JSON
   });
-  var animation1 = lottie.loadAnimation({
+  var animation4 = lottie.loadAnimation({
     container: document.getElementById('animationContainer1'),
     renderer: 'svg',
     loop: true,
@@ -111,7 +112,7 @@
   });
   
   // Ініціалізація другої анімації
-  var animation2 = lottie.loadAnimation({
+  var animation5 = lottie.loadAnimation({
     container: document.getElementById('animationContainer2'),
     renderer: 'svg',
     loop: true,
@@ -119,14 +120,14 @@
     path: 'data_05_01.json', // замініть на шлях до вашого файлу Lottie JSON
   });
 
-    var animation2 = lottie.loadAnimation({
+    var animation6 = lottie.loadAnimation({
     container: document.getElementById('animationContainer2'),
     renderer: 'svg',
     loop: true,
     autoplay: true,
     path: 'data_06_01.json', // замініть на шлях до вашого файлу Lottie JSON
   });
-      var animation2 = lottie.loadAnimation({
+      var animation7 = lottie.loadAnimation({
     container: document.getElementById('animationContainer2'),
     renderer: 'svg',
     loop: true,
